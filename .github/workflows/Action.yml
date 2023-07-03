@@ -26,15 +26,10 @@ jobs:
       - name: execute py script # run main.py
         run: python Collector.py
           
-      - name: commit files
+      - name: commit and push changes
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config user.email "hemsainath15@gmail.com"
+          git config user.name "GitHub Action"
           git add -A
           git commit -m "Dataset Updated"
-          
-      - name: push changes
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main 
+          git push
