@@ -2,7 +2,7 @@ name: Weather data collector
 
 on:
   schedule:
-    - cron: '10 23 * * *' # everyday at 23:10
+    - cron: '37 18 * * *' # everyday at 23:10
 
 jobs:
   build:
