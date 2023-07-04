@@ -3,7 +3,7 @@ name: Weather data collector
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 4 * * *' # 4:30(GMT) = 10:30(IST)
+    - cron: '30 5 * * *' # 5:30(GMT) = 11:00(IST)
 
 jobs:
   build:
