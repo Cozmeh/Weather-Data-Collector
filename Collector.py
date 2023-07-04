@@ -11,3 +11,6 @@ temperature.insert(0,date) # puts the current date at the start of the list
 with open('HourlyTemperature.csv', 'a', encoding='UTF8') as f:
      writer = csv.writer(f)
      writer.writerow(temperature) # appends the current day's temperatures
+
+print(todayData)
+
