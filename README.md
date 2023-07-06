@@ -68,7 +68,7 @@ Before running this script, make sure you have the following:
 
     on:
       schedule:
-        - cron: '30 5 * * *' # Schedule to run at 5:30 GMT (replace with your desired time)
+        - cron: '30 17 * * *' # Schedule to run at 5:30 GMT (replace with your desired time)
 
     jobs:
       collect-weather-data:
