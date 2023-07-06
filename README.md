@@ -63,8 +63,8 @@ Before running this script, make sure you have the following:
 
 10. Paste the following code into the workflow file:
    * Check out https://github.com/Cozmeh/WeatherCollector/blob/main/.github/workflows/Action.yml
-     
-    Ensure that the `cron` expression in the `on.schedule` section matches your desired schedule. The example above runs at 5:30 GMT. ie 11:00 IST
+   * Do not forget to change the `email` in the config section
+   * Also ensure that the `cron` expression in the `on.schedule` section matches your desired schedule. The example above runs at 5:30 GMT. ie 11:00 IST
 
 11. Commit and push the workflow file to the repository
 
