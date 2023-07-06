@@ -62,43 +62,8 @@ Before running this script, make sure you have the following:
 9. Click on "Set up a workflow yourself" and create a new workflow file, such as `.github/workflows/weather-data-collector.yml`.
 
 10. Paste the following code into the workflow file:
-
-    ```yaml
-    name: Weather Data Collector
-
-    on:
-      schedule:
-        - cron: '30 17 * * *' # Schedule to run at 5:30 GMT (replace with your desired time)
-
-    jobs:
-      collect-weather-data:
-        runs-on: ubuntu-latest
-
-        steps:
-          - name: Checkout repository
-            uses: actions/checkout@v2
-
-          - name: Set up Python
-            uses: actions/setup-python@v2
-            with:
-              python-version: '3.x'
-
-          - name: Install dependencies
-            run: |
-              pip install requests
-
-          - name: Run Weather Data Collector script
-            run: python collector.py
-
-          - name: Commit and push changes
-            run: |
-              git config user.email "yourEmail@mail.com"
-              git config user.name "AnyName"
-              git add -A
-              git commit -m "Updated Today's Weather"
-              git push
-    ```
-
+   * Check out https://github.com/Cozmeh/WeatherCollector/blob/main/.github/workflows/Action.yml
+     
     Ensure that the `cron` expression in the `on.schedule` section matches your desired schedule. The example above runs at 5:30 GMT. ie 11:00 IST
 
 11. Commit and push the workflow file to the repository
